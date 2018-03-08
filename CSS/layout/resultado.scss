@@ -7,14 +7,12 @@
     width:45%;
     max-width:550px;
     height:38%;
-    background-color:pink;
     border:1px solid black;
     position:relative;
 
         figure{
             width:100%;
             height:100%;
-            background-color:tomato;
             margin:0;
             display:inline-flex;
 
@@ -25,10 +23,16 @@
                     padding-top:10px;
                     box-sizing:border-box;
 
-                    ul{
-                        list-style-type:none;
-                        padding:0;
-                    }
+                        ul{
+                            list-style-type:none;
+                            padding:0;
+                        }
+
+                        a{
+                            color:black;
+                            text-decoration:none;
+                            font-weight:bold;
+                        }
                 }
         }
 }
@@ -46,6 +50,11 @@
 
 .resultados__titulo{
     text-align:center;
+
+        h3{
+            font-family:"raleway", sans-serif;
+            font-size:1.4em;
+        }
 }
 
 .resultados__container{
