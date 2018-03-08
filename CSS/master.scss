@@ -1,2 +1,7 @@
+.section, .resultado{
+    font-family:"raleway", sans-serif;
+}
+
+@import "helpers/mixins-extends.scss";
 @import "layout/resultado.scss";
 @import "layout/search-box.scss";
