@@ -1,4 +1,4 @@
-.container-all {
+.section_inner {
   display: inline-block;
   font-family: "raleway", sans-serif;
   width: 80%;
@@ -19,28 +19,26 @@
   position: relative;
   padding-bottom: 47px; }
 
-.campo-inf {
-  height: 100%;
-  width: 100%;
+.section-inner__content {
+  width: 80%;
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section-inner__content h4 {
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    font-weight: 700; }
+  .section-inner__content p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0px; }
 
-.campo-inf h4 {
-  font-size: 30px;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  font-weight: 700; }
-
-.campo-inf p {
-  font-size: 20px;
-  font-weight: 300;
-  margin: 20px 0px; }
-
-.container-inputs {
-  width: 70%;
+.section_inner__content {
+  width: 80%;
   height: 100%;
   display: inline-block;
   position: absolute;
@@ -75,16 +73,9 @@
   position: relative;
   bottom: 2px;
   transition: .7s; }
-
-.botao-onde:hover {
-  background-color: white;
-  color: black; }
-
-.resultado-titulo h4 {
-  font-size: 30px;
-  margin: 0;
-  font-weight: 400;
-  line-height: 1.2; }
+  .botao-onde:hover {
+    background-color: white;
+    color: black; }
 
 .resultado-titulo {
   position: relative;
@@ -94,6 +85,11 @@
   width: 80%;
   margin-bottom: 65px;
   margin-top: 67px; }
+  .resultado-titulo h4 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2; }
 
 option {
   background-color: black; }
@@ -111,6 +107,17 @@ option {
 .sinopse-parte {
   width: 60%;
   position: relative; }
+  .sinopse-parte h4 {
+    font-size: 1.9em;
+    margin: 0;
+    display: block;
+    position: relative;
+    top: 3%;
+    margin-bottom: 27px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    text-align: left; }
 
 .imagem-parte {
   width: 40%;
@@ -125,18 +132,6 @@ option {
   position: absolute;
   left: 50%;
   transform: translate(-50%); }
-
-.sinopse-parte h4 {
-  font-size: 1.9em;
-  margin: 0;
-  display: block;
-  position: relative;
-  top: 3%;
-  margin-bottom: 27px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 90%;
-  text-align: left; }
 
 .lista-dados {
   position: relative;
@@ -158,14 +153,13 @@ option {
   color: black;
   text-decoration: underline;
   transition: .2s; }
-
-.lista-dados a:hover {
-  font-weight: bold; }
+  .lista-dados a:hover {
+    font-weight: bold; }
 
 .resultado-display {
   display: none; }
 
-.segurador-de-tudo {
+.section {
   text-align: center;
   display: inline-block;
   width: 100%; }
