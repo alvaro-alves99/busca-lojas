@@ -6,18 +6,32 @@ class CarregaLojas{
 
     static carregaJSON(link){
         var request = new XMLHttpRequest();
-        var conteudo = "banana";
+        var resposta = false;
 
         request.open('GET', link);
-        request.responseType = 'json';
+        request.responseType = "json";
+        request.send();
 
         request.onload = function(){
-            conteudo = request.response;
+            resposta = request.response;
+            this.conteudo = resposta;
         }
 
-        console.log(conteudo);
-
-        return conteudo;
+        setTimeout(function(){
+            lojas = resposta;
+        }, 400);
 
     }
+
+    static filtraJSON(valor, conteudo){
+
+        let resultadoFiltrado = lojas.filter(function(item){
+            if(item.cidade == valor){
+                return item;
+            }
+        });
+
+        return resultadoFiltrado;
+    }
+
 }
